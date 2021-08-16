@@ -11,7 +11,6 @@ export type Props<S, D> = {
   children: StepComponent<S> | StepComponent<S>[];
   reseteable?: boolean;
   onReset?: (state: S) => void;
-  // onComplete?: (state: S) => void;
 };
 
 export interface StepProps<T> {
