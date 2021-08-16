@@ -1,0 +1,42 @@
+@import 'config/vars';
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/presets';
+
+@import 'utils/color';
+@import 'utils/font';
+@import 'utils/mixins';
+
+@import 'components/workspace';
+@import 'components/button';
+@import 'components/steps-view/steps-view';
+@import 'components/form/input';
+@import 'components/form/input-password';
+@import 'components/icon';
+@import 'components/password-manager/password-manager';
+@import 'components/password-manager/intro';
+@import 'components/password-manager/input';
+@import 'components/password-manager/feedback';
+
+
+
+body {
+  font-family: font(default);
+  color: color(secondary)
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.row {
+  @include d-flex();
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+@each $name, $value in $colors-map {
+  .#{$name}{
+    color: color(#{$name})
+  }
+}

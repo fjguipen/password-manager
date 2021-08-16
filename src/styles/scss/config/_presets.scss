@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+p {
+  line-height: 22px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+textarea,
+input,
+button,
+select {
+  font-family: font(default);
+  font-size: inherit;
+}

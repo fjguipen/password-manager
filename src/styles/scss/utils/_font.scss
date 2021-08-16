@@ -1,0 +1,13 @@
+@function font($name, $schema:$fonts-map) {
+  @if map-has-key($schema, $name) {
+    @return map-get($schema, $name);
+  } @else {
+    @if map-has-key($fonts-map, 'default') {
+      @return map-get($fonts-map, 'default');
+    } @else {
+      @warn "The value #{$name} is not in the map '$schema'";
+    @return null;
+    }
+    
+  }
+};

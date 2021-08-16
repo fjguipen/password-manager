@@ -1,0 +1,15 @@
+.step {
+  &__input {
+    .block {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .row {
+      align-items: flex-start;
+      & > * {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

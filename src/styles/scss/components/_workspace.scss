@@ -1,0 +1,7 @@
+.workspace {
+  min-height: 100vh;
+  @include d-flex();
+  justify-content: center;
+  align-items: center;
+  background-color: color(background);
+}

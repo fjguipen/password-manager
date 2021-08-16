@@ -1,0 +1,62 @@
+.steps-tracker{
+  @include d-flex();
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: color(gray, 0.55);
+  position: relative;
+  height: 85px;
+  overflow: hidden;
+  &__step-wrapper{
+    height: 100%;
+    @include d-flex();
+    align-items: center;
+    position: relative;
+    &.current {
+      .mark {
+        background-color: color(white);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+      }
+    }
+  }
+  &__step {
+    border-radius: 100px;
+    width: 34px;
+    height: 34px;
+    background-color: color(secondary);
+    @include d-flex();
+    justify-content: center;
+    align-items: center;
+    color: color(white);
+    font-weight: 600;
+    border: 2px solid color(secondary);
+    z-index: 1;
+  }
+  &__line {
+    width: 34px;
+    height: 6px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: color(secondary);
+  }
+  &__step,
+  &__line {
+    &:not(.active) {
+      border-color: color(grey);
+      background-color:color(grey);
+    }
+  }
+  &__step {
+    &.current {
+      border-color: color(secondary);
+      background-color: color(secondary);
+      transform: scale(1.2);
+    }
+    
+  }
+}

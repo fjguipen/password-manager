@@ -1,0 +1,20 @@
+.step {
+  &__feedback {
+    .row{
+      flex-flow: row;
+    }
+    .draw {
+      margin-right: 0.5rem;
+      align-self: flex-start;
+    }
+    .action {
+      margin-top: 1rem;
+      margin-left: auto;
+      padding: 0;
+      color: color(primary);
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 90%;
+    }
+  }
+}
