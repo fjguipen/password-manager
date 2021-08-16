@@ -1,0 +1,77 @@
+{
+  "app":{
+    "title": "Password Manager"
+  },
+  "action": {
+    "cancel": "Cancelar",
+    "next": "Siguiente",
+    "back": "Volver"
+  },
+  "PManager": {
+    "goBack": "Volver a Password Manager",
+    "getIn": "Acceder",
+    "form": {
+      "password": {
+        "label": "Crea tu Contraseña Maestra",
+        "placeholder": "Crea tu contraseña"
+      },
+      "rePassword": {
+        "label": "Repite tu Contraseña Maestra",
+        "placeholder": "Repite tu contraseña"
+      },
+      "hint": {
+        "label": "Crea tu pista para recordar tu contraseña (opcional)",
+        "placeholder": "Introduce tu pista"
+      }
+    },
+    "steps": {
+      "0": {
+        "0": {
+          "title": "Crea tu Password Manager",
+          "content": {
+            "0": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papel y las aplciaciones no protegidas.",
+            "1": "Crea tu clave maestra: solo tú podrás acceder a tus secretos con ella."
+          }
+        },
+        "1": {
+          "title": "Cómo funciona",
+          "text": "En primer lugar, debes crear una contraseña diferente para sus pertenencias electrónicas. No popdrás recuperar tu contraseña, así que recuérdala bien."
+        },
+        "2": {
+          "title": "Qué datos puedes guardar",
+          "text": "Por ejemplo, el número de tu tarjeta, el PIN y el PUK de tu teléfono móvil, el número de serie de alguno de tus dispositivos o cualquier información que necesites tener en un lugar seguro."
+        }
+      },
+      "1": {
+        "title": "Crea tu password Manager",
+        "intro": ["En primer lugar, debes crear una contraseña diferente para sus pertenencias electrónicas", "No podrás recuperar tu contraseña, así que recuérdala bien."],
+        "hintTip": "También puedes crear una pista que te ayude a recordar tu contraseña maestra."
+      },
+      "2": {
+        "success": {
+          "title": "Tu Password Manager ya está creado!",
+          "text":"Lorem ipsum sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." ,
+          "cta": "Acceder"
+        },
+        "error": {
+          "title": "Ha ocurrido un error",
+          "text":"No hemos podido modificar tu Contraseña Maesta. Inténtalo más tarde.",
+          "cta": "Volver a Password Manager"
+        }
+      }
+    }
+  },
+  "form": {
+    "validation": {
+      "required": "El dato es obligatorio",
+      "minLength": "Al menos {{ length }} caracteres",
+      "maxLength": "Máximo {{ length }} caracteres",
+      "pattern": {
+        "password": "Al menos 1 número y 1 mayúscula"
+      },
+      "sameAs": {
+        "password": "Las contraseñas no coinciden"
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "app":{
+    "title": "Password Manager"
+  },
+  "action": {
+    "cancel": "Cancel",
+    "next": "Next",
+    "back": "Back"
+  },
+  "PManager": {
+    "goBack": "Back to Password Manager",
+    "getIn": "Get In",
+    "form": {
+      "password": {
+        "label": "Create your Master Password",
+        "placeholder": "Create your password"
+      },
+      "rePassword": {
+        "label": "Repeat your Master Password",
+        "placeholder": "Repeat your password"
+      },
+      "hint": {
+        "label": "Create your hint to remember your password (optional)",
+        "placeholder": "Enter your hint"
+      }
+    },
+    "steps": {
+      "0": {
+        "0": {
+          "title": "Create your Password Manager",
+          "content": {
+            "0": "Save here all your passwords, data or any information, forget paper notes and unprotected applications.",
+            "1": "Create your master key: only you can access your secrets with it."
+          }
+        },
+        "1": {
+          "title": "How it works",
+          "text": "First, you must create a different password for your electronic belongings. You will not be able to recover your password, so remember it well."
+        },
+        "2": {
+          "title": "Wich data can you save",
+          "text": "For example, the number of your card, the PIN and PUK of your mobile phone, the serial number of one of your devices or any information that you need to have in a safe place."
+        }
+      },
+      "1": {
+        "title": "Create your Password Manager",
+        "intro": ["First of all, you need to create a different password for your electronic belongings.", "You will not be able to recover your password, so remember it well."],
+        "hintTip": "You can also create a hint to help you remember your master password."
+      },
+      "2": {
+        "success": {
+          "title": "Your Password Manager is already created!",
+          "text":"Lorem ipsum sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." ,
+          "cta": "Get In"
+        },
+        "error": {
+          "title": "An error occurred",
+          "text":"We have not been able to modify your Master Password. Try again later.",
+          "cta": "Back to Password Manager"
+        }
+      }
+    }
+  },
+  "form": {
+    "validation": {
+      "required": "Input is required",
+      "minLength": "At least {{ length }} characters",
+      "maxLength": "Maximum {{ length }} characters",
+      "pattern": {
+        "password": "At least 1 numnber y 1 uppercase"
+      },
+      "sameAs": {
+        "password": "Passwords do not match"
+      }
+    }
+  }
+}
