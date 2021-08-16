@@ -4,6 +4,7 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 
+// ensure translations are ready
 jest.mock('react-i18next', () => ({
   useTranslation: () => {
     return {
