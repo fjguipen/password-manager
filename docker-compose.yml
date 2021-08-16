@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  app:
+    image: node:14
+    user: ${USER_ID}
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '2'
+    working_dir: /app
+    command: npm run start
+    restart: 'no'
+    ports: 
+      - 3000:3000
+    volumes:
+      - ./:/app
+
